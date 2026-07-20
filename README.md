@@ -25,4 +25,16 @@ And if you are having any issues on the code, just run typecheck solutions.
 npm run typecheck
 ```
 
+To add a command, create a new file in `src/commands` and enter the command code inside
+The command code should look like this:
+```javascript
+commands = {
+  data: {
+    ...
+  },
+  code: `...`
+}
+module.exports = commands;
+```
+
 Happy coding!
