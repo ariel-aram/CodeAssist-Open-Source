@@ -16,6 +16,11 @@ npm install
 copy token.example.js token.js
 ./run.bat
 ```
+If you want the complicated route, its difficult.
+- First, change the .bat content from your start file to your project, like if you start at `C:/users/USERNAME/` and your PATH for prject is `C:/users/USERNAME/Codes/BOT`, enter the path AFTER what you start in. so in this case it would be `node Codes/BOT/index.js`.
+- Then add your project folder to your PATH, done in environment variables
+- Then in the file name you begin in, just do run 
+Really simple, i know!
 
 And if you are having any issues on the code, just run typecheck solutions.
 
