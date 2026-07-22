@@ -38,8 +38,7 @@ print(varname)
 # ===== WITH LISTS =====
 print(len(listname))
 ;python]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[python;$math[$getGlobalVar[python]+1]]
+ $callFunction[getGlobals;python]
         ;]
 
         $if[$option[type]==variables;
@@ -48,8 +47,7 @@ varName = 10
 varname = "Hello!"
 varName = True
 ;python]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[python;$math[$getGlobalVar[python]+1]]
+ $callFunction[getGlobals;python]
         ]
         $if[$option[type]==loops;$codeBlock[
 # ===== FOR =====
@@ -60,8 +58,7 @@ for i in intList:
 while 1 > 10:
 # Insert action
 ;python]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[python;$math[$getGlobalVar[python]+1]]
+ $callFunction[getGlobals;python]
         ]
     `,
 }
