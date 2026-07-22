@@ -35,8 +35,7 @@ namespace myProgram{
     }
 }
 ;csharp]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+        $callFunction[getGlobals;csharp]
         ]
         $if[$option[type]==print;
         $codeBlock[
@@ -51,16 +50,14 @@ Console.Write(myVar)
 
 // WRITE DOES NOT MAKE A NEW LINE, WRITELINE DOES
 ;csharp]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+       $callFunction[getGlobals;csharp]
         ]
         $if[$option[type]==input;
         $codeBlock[
 // INSIDE MAIN BLOCK
 Console.ReadLine()
 ;csharp]
-        $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-        $setGlobalVar[csharp;$math[$getGlobalVar[csharp]+1]]
+$callFunction[getGlobals;csharp]
         ]
     `,
 }
