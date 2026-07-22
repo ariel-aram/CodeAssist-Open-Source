@@ -37,8 +37,7 @@ commands = {
 </body>
 </html>
 ;html]
-    $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-    $setGlobalVar[html;$math[$getGlobalVar[html]+1]]
+       $callFunction[getGlobals;html]
     ]
 
     $if[$option[type]==paragraph;
@@ -47,8 +46,7 @@ commands = {
 <p> Hello World </p>
 Hello World
 ;html]
-    $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-    $setGlobalVar[html;$math[$getGlobalVar[html]+1]]
+     $callFunction[getGlobals;html]
     ]
 
     $if[$option[type]==header;
@@ -61,8 +59,7 @@ Hello World
 <h5> Hello World! </h5>
 <h6> Hello World! </h6>
 ;html]
-    $setGlobalVar[commandsUsed;$math[$getGlobalVar[commandsUsed]+1]]
-    $setGlobalVar[html;$math[$getGlobalVar[html]+1]]
+ $callFunction[getGlobals;html]
     ]
   `,
 }
