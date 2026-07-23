@@ -36,6 +36,7 @@ console.log(varName):
 ;javascript]
  $callFunction[getGlobals;javascript]
         ;]
+
         $if[$option[type]==variables;
         $codeBlock[
 let varName = 1: // INT
@@ -51,6 +52,7 @@ const varName = true:
 ;javascript]
         $callFunction[getGlobals;javascript]
         ;]
+        
         $if[$option[type]==function;
         $codeBlock[
 function myFunc(){

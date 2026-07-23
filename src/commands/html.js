@@ -39,6 +39,7 @@ commands = {
 ;html]
         $callFunction[getGlobals;html]
         ]
+
         $if[$option[type]==paragraph;
         $codeBlock[
 <!-- INSIDE BODY TAGS -->
@@ -47,6 +48,7 @@ Hello World
 ;html]
         $callFunction[getGlobals;html]
         ]
+        
         $if[$option[type]==header;
         $codeBlock[
 <!-- INSIDE BODY TAGS -->

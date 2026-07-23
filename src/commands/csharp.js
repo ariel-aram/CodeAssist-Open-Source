@@ -37,6 +37,7 @@ namespace myProgram{
 ;csharp]
         $callFunction[getGlobals;csharp]
         ]
+
         $if[$option[type]==print;
         $codeBlock[
 // INSIDE THE MAIN BLOCK
@@ -52,6 +53,7 @@ Console.Write(myVar)
 ;csharp]
         $callFunction[getGlobals;csharp]
         ]
+        
         $if[$option[type]==input;
         $codeBlock[
 // INSIDE MAIN BLOCK

@@ -36,6 +36,7 @@ console.log(varName):
 ;typescript]
         $callFunction[getGlobals;typescript]
         ]
+        
         $if[$option[type]==variables;
         $codeBlock[
 let varName: number = 0: // INT

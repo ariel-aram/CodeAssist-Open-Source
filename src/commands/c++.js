@@ -43,6 +43,7 @@ std::cin >> varName:
 ;cpp]
         $callFunction[getGlobals;cpp]
         ]
+        
         $if[$option[type]==variables;
         $codeBlock[
 int myInt = 25:

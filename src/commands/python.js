@@ -48,6 +48,7 @@ varName = True
 ;python]
  $callFunction[getGlobals;python]
         ]
+        
         $if[$option[type]==loops;$codeBlock[
 # ===== FOR =====
 for i in intList:
