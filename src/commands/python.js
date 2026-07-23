@@ -58,9 +58,9 @@ for i in intList:
 while 1 > 10:
 # Insert action
 ;python]
- $callFunction[getGlobals;python]
+        $callFunction[getGlobals;python]
         ]
     `,
-}
+};
 
-module.exports = commands
+module.exports = commands;
